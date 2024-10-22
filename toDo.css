@@ -1,0 +1,133 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+   
+    justify-content: space-evenly;
+    width: 100%;
+    height:100%;
+  
+}
+.main{
+    display:flex;
+    flex-direction: row;
+
+}
+.taskkadabba{
+    border:1px solid black;
+    height:300px;
+    width:560px;
+    margin:15px;
+    padding:15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
+#tasklist{
+    border: 3px solid black;
+   margin-top: 50px;
+    height: 400px;
+    width: 600px;
+   display: flex;
+   flex-direction: column;
+   box-shadow: 3px 3px 15px rgb(73, 67, 67);
+   
+   
+  
+
+}
+#img{
+    height:50px;
+    width:50px;
+    margin: 1px;
+    padding: 1px;
+}
+#taskarea{
+
+    border: 3px solid black;
+    margin-top: 50px;
+    height: 200px;
+    width: 400px;
+    box-shadow: 3px 3px 15px rgb(73, 65, 65);
+
+}
+
+p{
+    font-size: 40px;
+    font-weight: 100;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin:5px;
+    padding:5px;   
+}
+.inside{
+    display: flex;
+  }
+#text{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 1px solid black;
+    margin:7px;
+    padding:7px;
+    height:25px;
+    width:200px;
+    margin-top: 30px;
+}
+#btn{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border:1px solid black;
+    height: 25px;
+    width:40px;
+    margin:5px;
+    padding:5px;
+    border-radius: 5px;
+    margin-top: 30px;
+
+}
+ul{
+    list-style-type: none;
+}
+ul li{
+    font-size: 25px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin:5px;
+    margin-right: 10px;;
+    padding:5px;
+    font-weight: 20px;
+    position: relative;
+}
+ul li::after{
+    content: "";
+    position: absolute;
+    height:30px;
+    width:30px;
+    border-radius: 30%;   
+    background-image: url(https://www.shutterstock.com/image-vector/unchecked-checkbox-outline-icon-vector-260nw-1282083748.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+ul li.incomplete {
+    color: black;
+}
+
+ul li.il{
+    text-decoration: line-through;
+}
+ul li.il::after{
+background-image: url(https://media.istockphoto.com/id/1407631172/vector/box-check-or-unchecked-icon.jpg?s=612x612&w=0&k=20&c=AsC7Kc_6761hSteUBPITNojfCnRRGRqpt0ZACmFezNM=);
+}
+ul li span{
+    font-size: 27px;
+    position: absolute;
+    width:30px;
+    height:30px;
+    right:0px;
+    text-align:center;
+    border-radius:50%;
+
+}
+ul li span:hover{
+    background-color: rgb(228, 226, 226);
+}

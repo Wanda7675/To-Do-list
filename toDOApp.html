@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do list</title>
+    <link rel="stylesheet" href="toDo.css">
+</head>
+<body>
+    <div class="container">
+    
+        <div id="tasklist" class="box">
+           <div class="main">
+            <p>To-Do List</p>
+            <img src="todo.png" id="img">
+           </div>
+       
+          <div class="taskkadabba">
+           <ul id="taskdaal">
+            <!-- <li class="il">Task 1 </li>
+            <li>Task 2 </li>
+            <li>Task 3 </li> -->
+           </ul>
+
+        </div>
+      </div>
+        <div id="taskarea" class="box">
+            <p>Taskarea</p>
+            <div class="inside">
+                <input type="text" id="text" placeholder="Enter your task">
+                <button onclick="addtask()"   id="btn">ADD</button>
+            </div>
+           
+        </div>
+    </div>
+
+
+    <script src="appToDo.js"></script>
+</body>
+</html>
